@@ -1,5 +1,8 @@
 library(VennDiagram)
 
+if (!require("grid")) {install.packages("grid")}
+if (!require("VennDiagram")) {install.packages("VennDiagram")}
+
 args <- commandArgs(trailing=T)
 	site_f1 <- args[1]
 	site_f2 <- args[2]

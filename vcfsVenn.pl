@@ -11,8 +11,8 @@ if(@$site_fs>=2 and @$site_fs<=5){
 	my $samps=$paras;
 	$samps=~s/\s+/_/g;
 	$samps=~s/\.vcf\.site//g;
-	print "$Rscript $Bin/venn$len.R $paras $samps.venn.pdf\n";
-	system("$Rscript $Bin/venn$len.R $paras $samps.venn.pdf\n");
+	print "$Rscript $Bin/src/venn$len.R $paras $samps.venn.pdf\n";
+	system("$Rscript $Bin/src/venn$len.R $paras $samps.venn.pdf\n");
     system("rm -f $paras\n");
 }else{
 	print STDERR "Usage: perl $0 <vcf1> <vcf2> [vcf3] [vcf4] [vcf5]\n";
