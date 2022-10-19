@@ -1,4 +1,5 @@
 ## 1 Installation
+The dependencies will be installed as follows:
 
 ```
 sh install.sh
